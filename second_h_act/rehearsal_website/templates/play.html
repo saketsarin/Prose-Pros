@@ -9,9 +9,10 @@
 </head>
 
 <body>
+    {% block content %}
     <div class="container">
         <div class="character">
-            <p>{character}</p>
+            <p>{{character}}</p>
         </div>
         <div class="lowerhalf">
             <div class="dialogues">
@@ -22,6 +23,7 @@
             <img src="#" alt="">
         </div>
     </div>
+    {% endblock %}
 </body>
 
 </html>
