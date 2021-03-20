@@ -84,6 +84,18 @@ input[type="number"] {
   background-color: antiquewhite;
 }
 
+.role1:focus {
+  background-color: rgb(255, 206, 143);
+}
+
+.role2:focus {
+  background-color: rgb(255, 206, 143);
+}
+
+.roleText {
+  user-select: none;
+}
+
 .buttonHolder {
   text-align: center;
 }
