@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #124dbf;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px;
+}
+
+.row {
+  padding: 65px;
+  text-align: center;
+  justify-content: space-around;
+  margin: 0 220px;
+}
+
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.col-75 {
+  float: right;
+  width: 50%;
+}
+
+label {
+  background-color: #0c0f59;
+  padding: 20px;
+  font-size: larger;
+  margin: 30px;
+  border-radius: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  text-align: center;
+  -moz-appearance: textfield;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #000;
+}
+
+.roleHolder {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-left: 40px;
+}
+
+.role1 {
+  background: url(../static/images/1.svg);
+  padding-top: 250px;
+  padding-left: 290px;
+  float: left;
+  color: black;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.role2 {
+  background: url(../static/images/2.svg);
+  padding-top: 250px;
+  padding-left: 290px;
+  float: right;
+  color: black;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+
+.buttonHolder {
+  text-align: center;
+}
+
+.submitButton {
+  background-color: #ec5945;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.submitButton:hover {
+  background-color: #d1412e;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
