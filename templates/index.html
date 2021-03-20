@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <title>Rehearsal Website</title>
+</head>
+
+<body>
+    <form name="form" action="play/" method="POST">{% csrf_token %}
+	
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label for="sceneNum">Enter Scene Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" name="sceneNum" id="sceneNum">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="chooseRole" class="role">Choose Your Role</label>
+            </div>
+            <div class="roleHolder">
+                <input type="button" value="Role #1" class="role1">
+                <!-- <img src="#" alt="Role 1"> -->
+                <p class="roleText">Role #1</p>
+                </input>
+                <input type="button" value="Role #2" class="role2">
+                <!-- <img src="#" alt="Role 2"> -->
+                <p class="roleText">Role #2</p>
+                </input>
+            </div>
+        </div>
+        <div class="buttonHolder">
+            <input type="submit" value="Start" class="submitButton">
+        </div>
+    </form>
+</body>
+
+</html>
