@@ -1,0 +1,40 @@
+Sir Chancelot + m
+Squire + f
+Dragon + f
+
+Scene 1# day
+
+Sir Chancelot* Ha! I will slay this dragon now, for the sake of the people!
+Squire* But my lord… you have no sword and no armor. However will you destroy that dragon?
+Sir Chancelot* With the courage of my heart. Hyah! Go, horse! We will slay this dragon once and for all.
+
+Scene 2# day
+
+Sir Chancelot* We have reached the dragon’s lair, my trusty steed. Now where is that dragon? Dragon, come out from your lair. We have come to challenge you!
+Squire* Perhaps we must set a trap for the dragon. They are intelligent creatures. They cannot be bested by brute force. Or brute… pureness of heart.
+Sir Chancelot* Good idea my squire! We will trap this dragon and save mankind!
+
+Scene 3# night
+
+Squire* The trap is set my lord! Have you completed your meal?
+Sir Chancelot* Yes, squire. I must be well-fed for my challenge with the mighty dragon! I cannot be doing such nonsense as setting traps. Do you have anymore bread that I might eat.
+Squire* Yes, my lord.
+
+Scene 4# night
+
+Squire* The dragon has fallen in our trap! Wake up my lord!
+Sir Chancelot* What…?
+Squire* Now is no time for sleeping sire. We must seize the day!
+Sir Chancelot* Let’s go destroy the dragon!
+
+Scene 5# night
+
+Sir Chancelot* I will run at the dragon, and my pureness of heart will destroy him!
+Dragon* You are a fool! If you are willing to slay a dragon, how can you truly be pure of heart. And how can pureness of heart take a physical form to destroy me, mortal? Now, I will destroy you!
+Squire* No, my lord! I will kill this dragon and save you!
+Dragon* Oh, no! The squire has pierced my armor! I have been felled by a lowly squire.
+
+Scene 6# day
+
+Sir Chancelot* You are the squire who has saved us all. For this, you will become a knight and protect the people from this day on.
+Squire* Thank you, my lord. I will do so with honor.
