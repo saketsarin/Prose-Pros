@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rehearsal_website.forms import form
+from rehearsal_website.forms import RehearsalForm
 
 
 def mainPage(request):
@@ -8,15 +8,20 @@ def mainPage(request):
 
 def submit(request):
     sceneNum = 0
+    character = 0
 
     if request.method == "POST":
-        myForm = form(request.POST)
+        print(request.POST)
+        myForm = RehearsalForm(request.POST)
 
         if myForm.is_valid():
+            print(myForm.cleaned_data)
             sceneNum = myForm.cleaned_data['sceneNum']
             character = myForm.cleaned_data['character']
+        else:
+            print('error: invalid form')
 
     else:
-        myForm = form()
+        myForm = RehearsalForm()
 
     return render(request, 'play.html', {"sceneNum": sceneNum, "character": character})

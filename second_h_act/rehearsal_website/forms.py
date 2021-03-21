@@ -1,5 +1,5 @@
 from django import forms
 
-class form(forms.Form):
-    sceneNum = forms.IntegerField
-    character = forms.IntegerField
+class RehearsalForm(forms.Form):
+    sceneNum = forms.IntegerField(label='sceneNum')
+    character = forms.IntegerField(label='character')
