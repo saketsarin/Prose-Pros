@@ -9,9 +9,17 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #124dbf;
   font-size: 0.875rem;
+  background-image: url('https://images.unsplash.com/photo-1444681179373-730055ddc7b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMTY0MjV8MHwxfHNlYXJjaHwxMHx8ZGF5fGVufDB8fHx8MTYxNjMxODM0MA&ixlib=rb-1.2.1&q=80&w=1080');
+  object-fit: none;
+  background-repeat: no-repeat;
+  background-color: rgb(29, 29, 29);
+  background-blend-mode: soft-light;
+  background-size: cover;
 }
+
+
+
 
 .wrapper {
   background-color: #fff;
