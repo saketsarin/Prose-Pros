@@ -1,10 +1,4 @@
-/*
-=============== 
-Global Styles
-===============
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 *,
 ::after,
@@ -14,119 +8,21 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family:  'Poppins', sans-serif;;
-  background-color:  #124dbf;
+  font-family: "Poppins", sans-serif;
+  background-color: #124dbf;
   color: var(--clr-grey-1);
   font-size: 0.875rem;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-img:not(.logo) {
-  width: 100%;
-}
-img {
-  display: block;
-}
 
-h1,
-h2,
-h3,
-h4 {
-  letter-spacing: var(--spacing);
-  text-transform: capitalize;
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 0.875rem;
-}
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
-}
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-/*  global classes */
-
-.btn {
-  text-transform: uppercase;
-  background: transparent;
- 
- color: var(--clr-black);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-}
-.btn:hover {
-  color: var(--clr-white);
-  background: var(--clr-black);
-}
-/* section */
-.section {
-  padding: 5rem 0;
-}
-
-.section-center {
-  width: 90vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
 }
 
 .wrapper {
   background-color: #fff;
   margin: 2vw;
-  padding: 3px 0;
+  padding: 25px 20px;
   vertical-align: middle;
 }
 
@@ -136,7 +32,6 @@ main {
   width: 80%;
   margin: 0 auto;
 }
-
 
 .role1 {
   background: url(../static/images/1.svg);
@@ -164,11 +59,13 @@ main {
   border: none;
 }
 
-.role1:focus, .role1:hover {
+.role1:focus,
+.role1:hover {
   background-color: rgb(255, 206, 143);
 }
 
-.role2:focus, .role2:hover {
+.role2:focus,
+.role2:hover {
   background-color: rgb(255, 206, 143);
 }
 
@@ -183,32 +80,28 @@ main {
   text-align: center;
 }
 
-.roleHolder{
+.roleHolder {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-around;
 }
-
 
 .roleText {
   user-select: none;
 }
-
 
 .row {
   padding: 20px 0;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
-
-.container{
+.container {
   max-width: 80%;
   margin: 0 auto;
 }
@@ -229,7 +122,7 @@ input[type="number"] {
   color: #000;
   padding: 10px 0;
   box-shadow: none;
-  border-style:solid;
+  border-style: solid;
   border: none;
   border: 1px solid rgb(26, 25, 25);
   border-radius: 5px;
@@ -237,15 +130,13 @@ input[type="number"] {
 
 label {
   background-color: #0c0f59;
-  padding:10px 40px;
+  padding: 10px 40px;
   color: #fff;
   font-size: 20px;
   border-radius: 5px;
-  
 }
 
-
-.buttonHolder{
+.buttonHolder {
   display: flex;
   justify-content: center;
   margin: 50px;
@@ -266,3 +157,14 @@ label {
   background-color: #d1412e;
 }
 
+@media screen and (max-width: 385px) {
+  .scene,
+  .role {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+
+  .role1, .role2{
+    padding-left: 260px;
+  }
+}
