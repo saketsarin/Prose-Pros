@@ -9,9 +9,10 @@
     <title>Rehearsal Website</title>
 </head>
 
+
 <body>
-    <form name="form" action="play.html" method="POST">
-        
+    <form name="form" id="form1" action="play/" method="POST">{% csrf_token %}
+	
         <div class="container">
             <div class="row">
                 <div class="col-25">
@@ -23,14 +24,15 @@
             </div>
 
             <div class="row">
-                <label for="chooseRole" class="role">Choose Your Role</label>
+                <label for="chooseRole" class="role" id="role">Choose Your Role</label>
             </div>
             <div class="roleHolder">
-                <input type="button" value="Role #1" class="role1">
+		<input type="hidden" value="3" name="character" id="character"></input>
+		<input type="button" value="Role #1" class="role1" onclick="document.getElementById('character').value='1';">
                 <!-- <img src="#" alt="Role 1"> -->
                 <p class="roleText">Role #1</p>
                 </input>
-                <input type="button" value="Role #2" class="role2">
+                <input type="button" value="Role #2" class="role2" onclick="document.getElementById('character').value='2';">
                 <!-- <img src="#" alt="Role 2"> -->
                 <p class="roleText">Role #2</p>
                 </input>
@@ -41,5 +43,6 @@
         </div>
     </form>
 </body>
+
 
 </html>
