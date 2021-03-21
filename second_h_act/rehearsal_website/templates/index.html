@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/main.css">
     <title>Rehearsal Website</title>
+
 </head>
 
 
 <body>
-    <form name="form" id="form1" action="play/" method="POST">{% csrf_token %}
-	
+    <div class="wrapper">
+    <form name="form" action="play/" method="POST">{% csrf_token %}
         <div class="container">
             <div class="row">
                 <div class="col-25">
@@ -41,7 +42,9 @@
         <div class="buttonHolder">
             <input type="submit" value="Start" class="submitButton">
         </div>
-    </form>
+
+        </form>
+    </div>
 </body>
 
 
