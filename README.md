@@ -1,4 +1,4 @@
-# rehearsal-website
+# Prose Pros
 ![ ](https://github.com/Pravallika-Myneni/Moodify/blob/main/Assets/hact.gif)
 ## Inspiration
 
