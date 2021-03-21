@@ -5,28 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/play.css">
     <title>Play!</title>
 </head>
 
 <body>
     {% block content %}
-    <div class="container">
-        <div class="character">
-            <p>Your Character : {{character}}</p>
-        </div>
+    <div class="wrapper">
         <div class="sceneNum">
             <p>Scene No : {{sceneNum}}</p>
         </div>
-        <div class="lowerhalf">
-            <div class="dialogues">
-                <div class="dialogue">
-                    <p>
-                        <!-- dialogues here -->
-                    </p>
-                </div>
-            </div>
-            <img src="#" alt="">
+        <div class="character">
+            <p>Your Character : {{character}}</p>
         </div>
+        <div class="dialogues">
+            <p class="dialogue1">
+                This is an example dialogue.
+            </p>
+        </div>
+        <div class="nextDialogue">
+            <p class="dialogue2">
+                This is the next dialogue.
+            </p>
+        </div>
+        <img src="#" alt="">
     </div>
     {% endblock %}
 </body>

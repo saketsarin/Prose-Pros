@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #124dbf;
+  font-size: 0.875rem;
+}
+
+.wrapper {
+  background-color: #fff;
+  height: 80vh;
+  margin: 2vw;
+  padding: 25px 20px;
+  vertical-align: middle;
+}
+
+.dialogues {
+  margin: 50px;
+  height: 40vh;
+  text-align: center;
+  color: yellow;
+  background-color: gray;
+  padding: 130px;
+}
+
+.dialogue1 {
+  font-size: 18px;
+}
+
+.nextDialogue {
+  margin: -10px 50px;
+  height: 5vh;
+  text-align: center;
+  color: darkred;
+  background-color: lightgray;
+  padding: 60px;
+}
+
+.dialogue2 {
+  font-size: 13px;
+}

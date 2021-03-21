@@ -10,13 +10,11 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #124dbf;
-  color: var(--clr-grey-1);
   font-size: 0.875rem;
 }
 
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
 }
 
 .wrapper {
@@ -164,7 +162,8 @@ label {
     padding: 10px 20px;
   }
 
-  .role1, .role2{
+  .role1,
+  .role2 {
     padding-left: 260px;
   }
 }
