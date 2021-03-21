@@ -23,7 +23,7 @@ def submit(request):
             scriptPath = os.path.join(BASE_DIR, 'rehearsal_website\static\script.txt')
             maxNumAudio = read_and_tts.saveAudio(scriptPath, sceneNum, character)
 
-            return render(request, 'play.html', {"sceneNum": sceneNum, "character": character, "maxAudio":maxNumAudio})
+            return render(request, 'play.html', {"sceneNum": sceneNum, "character": character, "maxAudio":maxNumAudio, "scriptPath":scriptPath})
         else:
             print('error: invalid form')
 
