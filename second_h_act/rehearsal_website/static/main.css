@@ -57,13 +57,22 @@ p {
   border: none;
 }
 
-.role1:focus,
-.role1:hover {
-  background-color: rgb(255, 206, 143);
+.role3 {
+  background: url(../static/images/3.svg);
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-left: 310px;
+  margin-top: 50px;
+  float: right;
+  color: black;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border: none;
 }
 
-.role2:focus,
-.role2:hover {
+.role1:hover,
+.role2:hover,
+.role3:hover {
   background-color: rgb(255, 206, 143);
 }
 
@@ -163,7 +172,8 @@ label {
   }
 
   .role1,
-  .role2 {
+  .role2,
+  .role3 {
     padding-left: 260px;
   }
 }
