@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/play.css">
     <title>Play!</title>
+    <script src="../static/js/config.js"></script>
+    <script src="../static/js/unsplash.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +20,9 @@
         <div class="character">
             <p>Your Character : {{character}}</p>
         </div>
+        <audio loop autoplay class="bgScore">
+            <source src="../static/assets/mystery/1.mp3">
+        </audio>
         <div class="dialogues">
             <script>
                 const scene = {{ sceneNum }};
