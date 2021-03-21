@@ -21,9 +21,9 @@ def submit(request):
             sceneNum = myForm.cleaned_data['sceneNum']
             character = myForm.cleaned_data['character']
             scriptPath = os.path.join(BASE_DIR, 'rehearsal_website\static\script.txt')
-            read_and_tts.saveAudio(scriptPath, sceneNum, character)
+            maxNumAudio = read_and_tts.saveAudio(scriptPath, sceneNum, character)
 
-            return render(request, 'play.html', {"sceneNum": sceneNum, "character": character})
+            return render(request, 'play.html', {"sceneNum": sceneNum, "character": character, "maxAudio":maxNumAudio})
         else:
             print('error: invalid form')
 

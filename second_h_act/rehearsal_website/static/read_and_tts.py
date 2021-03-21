@@ -69,6 +69,7 @@ def saveAudio(filepath, sceneNum, characterNum):
     character_selected = characterList[characterNum][0] #input("enter character: ")
     other_characters = [i for i in scene['roles'] if i!=character_selected ]
     audioPath = os.path.join(BASE_DIR, 'rehearsal_website\static\scriptAudio')
+    audioNum = 0
     
     if(len(other_characters) == 2):
 
@@ -85,7 +86,6 @@ def saveAudio(filepath, sceneNum, characterNum):
         role_2.setProperty('voice', voices[1].id) #female voice
 
         scene_selected_script = scene_selected_play['dialogue_list']
-        audioNum = 0
         for dialogue in scene_selected_script:
             speaker = dialogue['charname']
             rest = dialogue['line']
@@ -100,7 +100,8 @@ def saveAudio(filepath, sceneNum, characterNum):
                 role_2.runAndWait()
                 role_2.stop()
             #else: 
-                #time.sleep(30) #delay must be moved to html
+                #time.sleep(30) #delay must be moved to html, but audioNum still increments regardless
+        
 
     else:
         role_1 = pyttsx3.init()
@@ -109,7 +110,6 @@ def saveAudio(filepath, sceneNum, characterNum):
         voices = role_1.getProperty('voices')
         role_1.setProperty('voice', voices[0].id)
         scene_selected_script = scene_selected_play['dialogue_list']
-        audioNum = 0
         for dialogue in scene_selected_script:
             speaker = dialogue['charname']
             rest = dialogue['line']
@@ -120,4 +120,6 @@ def saveAudio(filepath, sceneNum, characterNum):
                 role_1.runAndWait()
                 role_1.stop()
             #else: 
-                #time.sleep(30) #delay must be moved to html
+                #time.sleep(30) #delay must be moved to html, but audioNum still increments regardless
+
+    return audioNum
