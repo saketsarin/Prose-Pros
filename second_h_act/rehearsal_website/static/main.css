@@ -17,7 +17,6 @@ body {
   font-family:  'Poppins', sans-serif;;
   background-color:  #124dbf;
   color: var(--clr-grey-1);
-  line-height: 1.5;
   font-size: 0.875rem;
 }
 ul {
@@ -126,8 +125,9 @@ main {
 
 .wrapper {
   background-color: #fff;
-  margin: 0.35vw 1vw;
+  margin: 2vw;
   padding: 3px 0;
+  vertical-align: middle;
 }
 
 .container {
@@ -137,11 +137,6 @@ main {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .role1 {
   background: url(../static/images/1.svg);
@@ -196,15 +191,6 @@ main {
   
 }
 
-label {
-  background-color: #0c0f59;
-  padding:10px 40px;
-  color: #fff;
-  font-size: 20px;
-
-  border-radius: 5px;
-  
-}
 
 .roleText {
   user-select: none;
@@ -218,7 +204,7 @@ label {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+  gap: 20px;
 }
 
 
@@ -239,12 +225,25 @@ input[type="number"] {
   -moz-appearance: textfield;
   width: 70vw;
   max-width: 800px;
-  margin-top: 20px;
-  border-radius: 5px;
-  font-size: 25px;
+  font-size: 20px;
   color: #000;
+  padding: 10px 0;
+  box-shadow: none;
+  border-style:solid;
+  border: none;
+  border: 1px solid rgb(26, 25, 25);
+  border-radius: 5px;
+}
+
+label {
+  background-color: #0c0f59;
+  padding:10px 40px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
   
 }
+
 
 .buttonHolder{
   display: flex;
