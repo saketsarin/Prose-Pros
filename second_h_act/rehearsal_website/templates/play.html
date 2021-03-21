@@ -20,35 +20,36 @@
         </div>
         <div class="dialogues">
             <script>
-                      const scene = {{sceneNum}};
-                      var audioCounter = 0;
-                      var audioName = '';
-                      var myDialogue = '';
-                      function nextAudio(){
-                           audioName = `../static/scriptAudio/${scene}_${audioCounter}.mp3`;
-                           document.getElementById("audioplayer").src = audioName;
-                           document.getElementById("test").innerHTML = audioName;
-                           if(audioCounter < {{maxAudio}}){
-                                audioCounter += 1;
-                           }else{audioCounter = 0;}
+                const scene = {{ sceneNum }};
+                var audioCounter = 0;
+                var audioName = '';
+                var myDialogue = '';
+                function nextAudio() {
+                    audioName = `../static/scriptAudio/${scene}_${audioCounter}.mp3`;
+                    document.getElementById("audioplayer").src = audioName;
+                    document.getElementById("test").innerHTML = audioName;
+                    if (audioCounter < {{ maxAudio }
+                }) {
+                    audioCounter += 1;
+                }else { audioCounter = 0; }
                       }
             </script>
             <audio controls autoplay id='audioplayer'>
-                 <source type="audio/mpeg">
+                <source type="audio/mpeg">
             </audio>
             <br>
-		<input type="button" class="nextButton" value="Next Dialog" onclick="nextAudio();"></input>
-        
-            <p id="test"> this is a debug display</p>
+            <input type="button" class="nextButton" value="Next Dialog" onclick="nextAudio();"></input>
+
+            <!-- <p id="test"> this is a debug display</p> -->
 
             <p class="dialogue1" id="myDialogue">
-                <!--This is an example dialogue.-->
-		<source src='{{scriptPath}}'>
+                But my lord… you have no sword and no armor. However will you destroy that dragon?
+                <source src='{{scriptPath}}'>
             </p>
         </div>
         <div class="nextDialogue">
             <p class="dialogue2">
-                This is the next dialogue.
+                With the courage of my heart. Hyah! Go, horse! We will slay this dragon once and for all.
             </p>
         </div>
         <img src="#" alt="">
